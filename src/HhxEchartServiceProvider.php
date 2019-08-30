@@ -28,11 +28,11 @@ class HhxEchartServiceProvider extends ServiceProvider
             );
         }
 
-        $this->app->booted(function () {
-            HhxEchart::routes(__DIR__.'/../routes/web.php');
-        });
+//        $this->app->booted(function () {
+//            HhxEchart::routes(__DIR__.'/../routes/web.php');
+//        });
         Admin::booting(function () {
-            Admin::js('https://ft-1257264202.cos.ap-shanghai.myqcloud.com/feitu/echarts/echarts.min.js');
+            Admin::js('vendor/laravel-admin-ext/echarts/echarts.min.js');
         });
     }
 }

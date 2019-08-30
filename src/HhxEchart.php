@@ -17,4 +17,8 @@ class HhxEchart extends Extension
         'path'  => 'hhx-echart',
         'icon'  => 'fa-gears',
     ];
+    public static function __callStatic($name, $arguments)
+    {
+        return view('echarts::'.$name, $arguments[0]);
+    }
 }
