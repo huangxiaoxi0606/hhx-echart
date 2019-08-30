@@ -1,9 +1,9 @@
 {
-    "name": "laravel-admin-ext/hhx-echart",
+    "name": "hhx-echart",
     "description": "Hhx的echart",
     "type": "library",
     "keywords": ["laravel-admin", "extension"],
-    "homepage": "https://github.com/laravel-admin-ext/hhx-echart",
+    "homepage": "https://github.com/huangxiaoxi0606/hhx-echart",
     "license": "MIT",
     "authors": [
         {
