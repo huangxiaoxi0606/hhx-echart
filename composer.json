@@ -1,5 +1,5 @@
 {
-    "name": "hhxEchart",
+    "name": "hhx/echart",
     "description": "Hhx的echart",
     "type": "library",
     "keywords": ["laravel-admin", "extension"],
