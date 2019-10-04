@@ -6,7 +6,7 @@ use Encore\Admin\Extension;
 
 class HhxEchart extends Extension
 {
-    public $name = 'hhx-echart';
+    public $name = 'Hhxechart';
 
     public $views = __DIR__.'/../resources/views';
 
@@ -14,11 +14,11 @@ class HhxEchart extends Extension
 
     public $menu = [
         'title' => 'Hhxechart',
-        'path'  => 'hhx-echart',
+        'path'  => 'Hhxechart',
         'icon'  => 'fa-gears',
     ];
     public static function __callStatic($name, $arguments)
     {
-        return view('echarts::'.$name, $arguments[0]);
+        return view('HhxEchart::'.$name, $arguments[0]);
     }
 }

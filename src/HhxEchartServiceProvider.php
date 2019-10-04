@@ -17,14 +17,14 @@ class HhxEchartServiceProvider extends ServiceProvider
         }
 
         if ($views = $extension->views()) {
-            $this->loadViewsFrom($views, 'hhx-echart');
+            $this->loadViewsFrom($views, 'HhxEchart');
         }
 
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
-                [$assets => public_path('vendor/laravel-admin-ext/hhx-echart')],
-                'hhx-echart'
+                [$assets => public_path('vendor/laravel-admin-ext/Hhxechart')],
+                'Hhxechart'
             );
         }
 
@@ -32,7 +32,7 @@ class HhxEchartServiceProvider extends ServiceProvider
 //            HhxEchart::routes(__DIR__.'/../routes/web.php');
 //        });
         Admin::booting(function () {
-            Admin::js('vendor/laravel-admin-ext/echarts/echarts.min.js');
+            Admin::js('vendor/laravel-admin-ext/Hhxechart/echarts.min.js');
         });
     }
 }
