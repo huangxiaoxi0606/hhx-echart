@@ -12,6 +12,6 @@ class HhxEchartController extends Controller
         return $content
             ->header('Title')
             ->description('Description')
-            ->body(view('hhx-echart::index'));
+            ->body(view('HhxEchart::index'));
     }
 }
